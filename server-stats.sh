@@ -4,6 +4,9 @@ echo "======================================"
 echo "      Server Performance Stats"
 echo "======================================"
 
+echo 
+echo "Generated on: $(date)"
+
 echo
 echo "CPU Usage:"
 top -bn1 | grep "Cpu(s)"
@@ -14,7 +17,7 @@ free -h
 
 echo
 echo "Disk Usage:"
-df -h
+df -h /
 
 echo
 echo "Top 5 Processes by CPU Usage:"
